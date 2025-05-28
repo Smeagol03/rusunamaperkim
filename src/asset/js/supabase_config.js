@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Konfigurasi Supabase
 const supabaseUrl = "https://olxnjpbvyjeuqjemgpab.supabase.co";
 const supabaseAnonKey =
@@ -9,13 +8,3 @@ const supabase = window.supabase.createClient(supabaseUrl, supabaseAnonKey);
 
 // Export supabase agar bisa digunakan di file lain
 window.supabase = supabase;
-=======
-import { createClient } from "@supabase/supabase-js";
-
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-const supabase = createClient(supabaseUrl, supabaseKey);
-
-export { supabase };
->>>>>>> 2466d3184865b72c4b91faae2d1cb5ecffd9f7d2

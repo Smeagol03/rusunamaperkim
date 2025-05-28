@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-=======
-import { createClient } from "@supabase/supabase-js";
-
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
-
->>>>>>> 2466d3184865b72c4b91faae2d1cb5ecffd9f7d2
 // Fungsi untuk validasi ukuran file
 function validateFileSize(file, maxSizeMB) {
   if (!file) {
